@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CleanArchitecture.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>CleanArchitecture.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\API\API.BuildingBlocks\API.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\..\SharedKernels\SharedKernels.csproj" />
+    <ProjectReference Include="..\Domain.BuildingBlocks\Domain.BuildingBlocks.csproj" />
+  </ItemGroup>
+
+</Project>
